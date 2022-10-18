@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de tarefas - JavaScript</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+    }
+    
+    a {
+      color: black;
+      font-size: 16px;
+      padding-left: 10px;
+    }
+
+    h1{
+      margin-bottom: 30px;
+    }
+    .container{
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+    #app{
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: brown;
+      width: 400px;
+      height: 400px;
+      border-radius: 35px;
+      box-shadow: 1px 3px 2px #000;
+    }
+
+    .containerBox{
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    #app input{
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+
+    #app button{
+      width: 100%;
+      padding: 10px;
+      background-color: rgb(140, 27, 27);
+      border-radius: 10px;
+      border: none;
+      color: white;
+      box-shadow: 1px 1px 1px #000;
+      transition-duration: 0.2s;
+    }
+
+    #app button:hover{
+      box-shadow: 1px 2px 1px rgb(255, 255, 255);
+    }
+
+    #app ul{
+      margin-left: 15px;
+      margin-top: 15px;
+    }
+
+    #app ul li{
+      font-size: 16px;
+      color: white;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div>
+      <h1>Lista de tarefas simples!</h1>
+    </div>
+    <div id="app">
+      <div class="containerBox">
+        <input type="text" placeholder="Digite uma tarefa!"/>
+        <button>Adicionar</button>
+    
+        <ul>
+          
+        </ul>
+      </div>
+  
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
